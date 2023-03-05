@@ -12,9 +12,9 @@ const {firebase} =useContext(FirebaseContext)
     firebase.firestore().collection('users').where('id', '==', userId).get().then((res) => {
       res.forEach(doc=> {
         setUserDetails(doc.data())
-    })
-  })
-},[])
+    }) 
+  }) 
+},[firebase,postDetails])
   return (
     <div className="viewParentDiv">
       <div className="imageShowDiv">
