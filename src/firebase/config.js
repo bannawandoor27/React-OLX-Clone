@@ -3,13 +3,13 @@ import 'firebase/auth'
 import 'firebase/firebase'
 import 'firebase/storage'
 const firebaseConfig = {
-    apiKey: "AIzaSyDr-FUFNQx-qLu2w83OcF6CNvokLcUR_6Y",
-    authDomain: "olx-clone-acbc0.firebaseapp.com",
-    projectId: "olx-clone-acbc0",
-    storageBucket: "olx-clone-acbc0.appspot.com",
-    messagingSenderId: "628076541450",
-    appId: "1:628076541450:web:6bb7a032ad1a9590c551f3",
-    measurementId: "G-J05LJ0VNSN"
-};
+    apiKey: "AIzaSyBnAssx8TPqIHfiedJHeEe9B_n1bz-k8Hw",
+    authDomain: "olx-clone-2da01.firebaseapp.com",
+    projectId: "olx-clone-2da01",
+    storageBucket: "olx-clone-2da01.appspot.com",
+    messagingSenderId: "309928034906",
+    appId: "1:309928034906:web:28b6dcdb2a6da60f13ce63",
+    measurementId: "G-MHNPMC8Y8X"
+  };
   
 export default firebase.initializeApp(firebaseConfig)
