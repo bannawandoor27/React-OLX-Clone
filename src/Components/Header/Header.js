@@ -50,15 +50,15 @@ function Header() {
           history.push('/login')
           }}>Logout </span>}
 
-        <div className="sellMenu">
+        <div className="sellMenu"  onClick={() => {
+                firebase.auth()
+                history.push('/create')
+              }}>
           <SellButton></SellButton>
           <div className="sellMenuContent">
             <SellButtonPlus></SellButtonPlus>
             <span
-              onClick={() => {
-                firebase.auth()
-                history.push('/create')
-              }}
+
             >SELL</span>
           </div>
         </div>

@@ -11,6 +11,7 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault()
     firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
+      alert('logged in successfully')
       history.push('/')
     }).catch((error) => {
       alert(error.message)
