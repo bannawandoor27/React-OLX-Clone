@@ -49,7 +49,7 @@ function Header() {
           firebase.auth().signOut()
           history.push('/login')
           }}>Logout </span>}
-
+{user?
         <div className="sellMenu"  onClick={() => {
                 firebase.auth()
                 history.push('/create')
@@ -62,6 +62,19 @@ function Header() {
             >SELL</span>
           </div>
         </div>
+        :
+        <div className="sellMenu"  onClick={() => {
+
+                history.push('/login')
+              }}>
+          <SellButton></SellButton>
+          <div className="sellMenuContent">
+            <SellButtonPlus></SellButtonPlus>
+            <span
+
+            >SELL</span>
+          </div>
+        </div>}
       </div>
     </div>
   );
