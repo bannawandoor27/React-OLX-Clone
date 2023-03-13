@@ -86,6 +86,7 @@ export default function Signup() {
         <a onClick={() => {
           history.push('/login')
         }}>Login</a>
+        {/* login completed */}
       </div>
     </div>
   );
